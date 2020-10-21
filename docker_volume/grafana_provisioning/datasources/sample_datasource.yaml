@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+ - name: datahub
+   type: influxdb
+   access: proxy
+   orgId: 1
+   url: http://172.28.1.1:8086
+   database: datahub
+   basicAuth: false
+   user: datahub_influx
+   password: datahub_influx
+   version: 1
+   editable: true
+   isDefault: true
+

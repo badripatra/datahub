@@ -1,0 +1,5 @@
+tornado
+pyrsistent==0.14.0
+flask-restx
+Flask
+influxdb

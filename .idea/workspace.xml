@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24db4f0a-53ae-41d9-a035-778716317af3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iPSKCSxk0vYTUC37uMszU1XlnC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lnp_rest_troubleshooting" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/kafka_consumer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.rest_api">
+    <configuration name="nfs_proto" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="kafka-docker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nfs_proto.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nfs_verifications" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="kafka-docker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nfs_verifications.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rest_api" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="kafka-docker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rest_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.nfs_proto" />
+      <item itemvalue="Python.rest_api" />
+      <item itemvalue="Python.nfs_verifications" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.nfs_verifications" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24db4f0a-53ae-41d9-a035-778716317af3" name="Default Changelist" comment="" />
+      <created>1601807667813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601807667813</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603018484481">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="418" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603018484481" />
+    <state x="642" y="332" width="620" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602951507454">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="642" y="332" width="620" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1056@0.0.1920.1056" timestamp="1602951507454" />
+    <state x="800" y="268" width="311" height="522" key="EnvironmentVariablesDialog" timestamp="1603015673236">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="800" y="268" width="311" height="522" key="EnvironmentVariablesDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603015673236" />
+    <state x="743" y="287" width="426" height="484" key="FileChooserDialogImpl" timestamp="1603124348802">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="743" y="287" width="426" height="484" key="FileChooserDialogImpl/0.0.1920.1056@0.0.1920.1056" timestamp="1603124348802" />
+    <state width="1920" height="288" key="GridCell.Tab.0.bottom" timestamp="1603099818239">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1056@0.0.1920.1056" timestamp="1603099818239" />
+    <state width="1920" height="288" key="GridCell.Tab.0.center" timestamp="1603099818238">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="288" key="GridCell.Tab.0.center/0.0.1920.1056@0.0.1920.1056" timestamp="1603099818238" />
+    <state width="1920" height="288" key="GridCell.Tab.0.left" timestamp="1603099818238">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="288" key="GridCell.Tab.0.left/0.0.1920.1056@0.0.1920.1056" timestamp="1603099818238" />
+    <state width="1920" height="288" key="GridCell.Tab.0.right" timestamp="1603099818238">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="288" key="GridCell.Tab.0.right/0.0.1920.1056@0.0.1920.1056" timestamp="1603099818238" />
+    <state width="1920" height="355" key="GridCell.Tab.1.bottom" timestamp="1603043059085">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="355" key="GridCell.Tab.1.bottom/0.0.1920.1056@0.0.1920.1056" timestamp="1603043059085" />
+    <state width="1920" height="355" key="GridCell.Tab.1.center" timestamp="1603043059085">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="355" key="GridCell.Tab.1.center/0.0.1920.1056@0.0.1920.1056" timestamp="1603043059085" />
+    <state width="1920" height="355" key="GridCell.Tab.1.left" timestamp="1603043059084">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="355" key="GridCell.Tab.1.left/0.0.1920.1056@0.0.1920.1056" timestamp="1603043059084" />
+    <state width="1920" height="355" key="GridCell.Tab.1.right" timestamp="1603043059085">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state width="1920" height="355" key="GridCell.Tab.1.right/0.0.1920.1056@0.0.1920.1056" timestamp="1603043059085" />
+    <state x="449" y="164" key="SettingsEditor" timestamp="1603015777066">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="449" y="164" key="SettingsEditor/0.0.1920.1056@0.0.1920.1056" timestamp="1603015777066" />
+    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603083852655">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603083852655" />
+  </component>
+</project>
