@@ -18,11 +18,12 @@ def create_folder(time_now):
     asup_type= random.choice(asup_type_list)
 
     if asup_type== "dot-regular":
-        job_name = "testjob2"
+        job_name = "ppcs_automation"
     elif asup_type == "dot-perf":
-        job_name = "testjob1"
+        job_name = "pcp_automation"
 
-    data["job_name"] = job_name
+    data["asup_type"] = asup_type
+
     source = base_volume +job_name
     dest = os.path.join(source, date_val, hour_val, min_val, second_val)
     if not os.path.exists(dest):

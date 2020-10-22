@@ -48,7 +48,7 @@ os.chdir(scriptdir)  # Switch to Script Directory. Setting for the cron to run
 
 # Route to get test data based on test data type you have mentioned
 post_parser = reqparse.RequestParser()
-post_parser.add_argument('job_name',  type=list, help='testjob1', location='json', required=True )
+post_parser.add_argument('job_name',  type=list, help='ppcs_automation', location='json', required=True )
 post_parser.add_argument('asup_id',  type=list, help='20201015160818', location='json', required=True )
 
 # Route to get test data based on test data type you have mentioned
@@ -60,8 +60,9 @@ class MainClass(Resource):
     def post(self):
         json_data = request.json
         job_name = json_data["job_name"]
+        service_name = json_data["service_name"]
         asup_id = json_data["asup_id"]
-        presence = nfs_verifications.check_nfs_presence(job_name, asup_id)
+        presence = nfs_verifications.check_nfs_presence(job_name,service_name, asup_id)
         return presence
 
 

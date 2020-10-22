@@ -1,0 +1,7 @@
+automation_jobname: pcp_automation
+asup_type: dot-perf
+service_name: pcp
+execute: yes
+verfication:
+   method: check_nfs_presence
+

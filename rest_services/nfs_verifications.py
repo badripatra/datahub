@@ -5,7 +5,8 @@ from time import time
 client = InfluxDBClient(host='172.28.1.1', port=8086,username='datahub_influx',
                         password ='datahub_influx')
 
-def push_data_influx(measurement_name,verification_point,expected,actual,status,env):
+
+def push_data_influx(job_name,service_name, verification_point,expected,actual,status,env):
 
     client.switch_database('datahub')
     current_time = int(time()) * 1000
@@ -13,9 +14,11 @@ def push_data_influx(measurement_name,verification_point,expected,actual,status,
     json_body = [
 
             {
-              "measurement": measurement_name,
+              "measurement": "automation_results",
               "time": current_time,
-              "fields": {"verification_point":verification_point,
+              "fields": {"job_name":job_name,
+                         "service_name":service_name,
+                         "verification_point":verification_point,
                          "expected": expected,
                          "actual": actual,
                          "status": status,
@@ -32,28 +35,20 @@ def get_folder_location_asup(asup_id):
     return folder_location
 
 
-def check_nfs_presence(job_name, asup_id):
+def check_nfs_presence(job_name, service_name, asup_id):
 
-    result = "Fail"
-    job_location = ""
-    expected = ""
-    actual = ""
+    job_location = "/nfsvolume/"+job_name
+    asup_derived_path = get_folder_location_asup(asup_id)
+    expected = job_location + asup_derived_path
+    isFile = os.path.isfile(job_location + asup_derived_path)
+    if isFile:
+        result = "Pass"
+        actual = expected
+    else:
+        result = "Fail"
+        actual = ""
 
-    if job_name == "testjob1":
-        job_location = "/nfsvolume/testjob1"
-
-    if job_name == "testjob2":
-        job_location = "/nfsvolume/testjob2"
-
-    if job_location:
-        asup_derived_path = get_folder_location_asup(asup_id)
-        expected = job_location + asup_derived_path
-        isFile = os.path.isfile(job_location + asup_derived_path)
-        if isFile:
-            result = "Pass"
-            actual = expected
-
-    push_data_influx(job_name,"check_nfs_presence",expected,actual,result,"stg")
+    push_data_influx(job_name, service_name, "check_nfs_presence",expected,actual,result,"stg")
 
     return result
 
