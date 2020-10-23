@@ -2,16 +2,17 @@ version: '2.1'
 
 services:
   restservices:
-    build: .
+    image: 'asia.gcr.io/training-240113/restservices'
     networks:
       - monitoring_network
     ports:
       - '8083:8083'
     volumes:
-      - ./nfsvolume/:/code
+      - ./nfsvolume:/nfsvolume:rw
+      - ./logs:/logs:rw
 
   zookeeper:
-    image: 'docker.io/bitnami/zookeeper:3-debian-10'
+    image: 'asia.gcr.io/training-240113/zookeeper'
     ports:
       - '2181:2181'
     volumes:
@@ -21,7 +22,7 @@ services:
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
   kafka:
-    image: 'docker.io/bitnami/kafka:2-debian-10'
+    image: 'asia.gcr.io/training-240113/kafka'
     ports:
       - '9092:9092'
     volumes:
@@ -35,7 +36,7 @@ services:
     depends_on:
       - zookeeper
   influxdb:
-    image: 'bpatra/public_images:influx'
+    image: 'asia.gcr.io/training-240113/influx'
     restart: always
     ports:
       - '8086:8086'
@@ -47,15 +48,15 @@ services:
       - ./docker_volume/influxdb:/var/lib/influxdb
       - ./docker_volume/influxdb_conf:/etc/influxdb
     environment:
-      - INFLUXDB_DB=jmeter
-      - INFLUXDB_USER=perfotron_influx
-      - INFLUXDB_USER_PASSWORD=perfotron_influx
+      - INFLUXDB_DB=datahub
+      - INFLUXDB_USER=datahub_influx
+      - INFLUXDB_USER_PASSWORD=datahub_influx
       - INFLUXDB_ADMIN_ENABLED=true
       - INFLUXDB_HTTP_READINESS_TIMEOUT=30
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_USER_PASSWORD=password123
   grafana:
-      image: 'bpatra/public_images:grafana'
+      image: 'asia.gcr.io/training-240113/grafana'
       restart: always
       ports:
         - '3000:3000'
