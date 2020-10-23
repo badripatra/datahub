@@ -8,6 +8,7 @@ import random
 asup_type_list = ["dot-regular","dot-perf"]
 base_volume = './nfsvolume/'
 
+
 def create_folder(time_now):
     date_val = time_now.strftime("%Y-%m-%d")
     hour_val = time_now.strftime("%H")
@@ -19,8 +20,10 @@ def create_folder(time_now):
 
     if asup_type== "dot-regular":
         job_name = "ppcs_automation"
+        log_location = "./logs/ppcs_automation.log"
     elif asup_type == "dot-perf":
         job_name = "pcp_automation"
+        log_location = "./logs/pcp_automation.log"
 
     data["asup_type"] = asup_type
 
@@ -30,6 +33,7 @@ def create_folder(time_now):
         os.makedirs(dest)  # creat dest dir
         with open(os.path.join(dest,asup_id),"w") as asup_file:
             asup_file.write("ASUP ID Processed")
+        os.system("echo ASUP ID : "+asup_id+" Processed Successfully >> "+log_location)
     return data
 
 def push_messages(sc):
@@ -38,6 +42,8 @@ def push_messages(sc):
     print ("Mesage Publish : "+ str (asip_id_generated))
     producer.send('topic_test', value=asip_id_generated)
     s.enter(1, 1, push_messages, (sc,))
+
+
 
 producer = KafkaProducer(
     bootstrap_servers=['0.0.0.0:9092'],

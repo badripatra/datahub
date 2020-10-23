@@ -9,6 +9,7 @@ services:
       - '8083:8083'
     volumes:
       - ./nfsvolume:/nfsvolume:rw
+      - ./logs:/logs:rw
 
   zookeeper:
     image: 'docker.io/bitnami/zookeeper:3-debian-10'

@@ -1,10 +1,17 @@
 import os
 from influxdb import InfluxDBClient
 from time import time
+import subprocess
+
+
 
 client = InfluxDBClient(host='172.28.1.1', port=8086,username='datahub_influx',
                         password ='datahub_influx')
 
+def ShellProcess(command):
+    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    output = process.communicate()
+    return output[0].strip()
 
 def push_data_influx(asup_id, job_name,service_name, verification_point,expected,actual,status,env):
 
@@ -25,7 +32,6 @@ def push_data_influx(asup_id, job_name,service_name, verification_point,expected
                              "actual": actual,
                              "status": status,
                              "count": 1,
-                             "countErr": 0,
                              "env":env}
                 }
               ]
@@ -42,7 +48,6 @@ def push_data_influx(asup_id, job_name,service_name, verification_point,expected
                            "expected": expected,
                            "actual": actual,
                            "status": status,
-                           "count": 0,
                            "countErr": 1,
                            "env": env}
             }
@@ -57,20 +62,20 @@ def get_folder_location_asup(asup_id):
     return folder_location
 
 
-def check_nfs_presence(job_name, service_name, asup_id):
+def check_log_presence(job_name, service_name, asup_id):
 
-    job_location = "/nfsvolume/"+job_name
-    asup_derived_path = get_folder_location_asup(asup_id)
-    expected = job_location + asup_derived_path
-    isFile = os.path.isfile(job_location + asup_derived_path)
-    if isFile:
+    job_location = "/logs/"+job_name+".log"
+    command = "grep "+asup_id+" "+job_location
+    expected = "ASUP ID : "+asup_id+ " Processed Successfully"
+    actual = ShellProcess(command)
+
+    if actual == expected:
         result = "Pass"
-        actual = expected
     else:
         result = "Fail"
-        actual = ""
 
-    push_data_influx(asup_id, job_name, service_name, "check_nfs_presence",expected,actual,result,"stg")
+
+    push_data_influx(asup_id, job_name, service_name, "check_log_presence",expected,actual,result,"stg")
 
     return result
 

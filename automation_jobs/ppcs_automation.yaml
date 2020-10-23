@@ -3,4 +3,4 @@ asup_type: dot-regular
 service_name: ppcs
 execute: yes
 verfication:
-   method: check_nfs_presence
+   method: check_log_presence

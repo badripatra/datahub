@@ -1,5 +1,6 @@
 FROM alpine:3.11
-RUN mkdir nfs_volume
+RUN mkdir nfsvolume
+RUN mkdir logs
 WORKDIR /code
 COPY ./rest_services /code
 COPY ./rest_services/requirements.txt requirements.txt

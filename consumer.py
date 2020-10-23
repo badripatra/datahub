@@ -6,6 +6,7 @@ import json
 import glob
 import yaml
 
+
 job_list = []
 automation_jobs =glob.glob("./automation_jobs/*.yaml")
 for each_file in automation_jobs:
@@ -48,3 +49,4 @@ for event in consumer:
             print (data)
             print (response.text)
             sleep(1)
+

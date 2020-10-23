@@ -14,10 +14,9 @@ import json
 
 from flask import Flask,request
 from flask_restx import Api, Resource, reqparse
-from werkzeug.middleware.proxy_fix import ProxyFix
 from flask import Blueprint
-from werkzeug.utils import *
 import nfs_verifications
+import log_verifications
 
 flask_app = Flask(__name__)
 blueprint = Blueprint('api', __name__, url_prefix='/api')
@@ -63,6 +62,20 @@ class MainClass(Resource):
         service_name = json_data["service_name"]
         asup_id = json_data["asup_id"]
         presence = nfs_verifications.check_nfs_presence(job_name,service_name, asup_id)
+        return presence
+
+# Route to get test data based on test data type you have mentioned
+@verifiation_ns.route("/check_log_presence")
+
+class MainClass(Resource):
+    @app.doc(responses={200: 'OK'})
+    @app.expect(post_parser)
+    def post(self):
+        json_data = request.json
+        job_name = json_data["job_name"]
+        service_name = json_data["service_name"]
+        asup_id = json_data["asup_id"]
+        presence = log_verifications.check_log_presence(job_name,service_name, asup_id)
         return presence
 
 
