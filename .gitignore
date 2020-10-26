@@ -1,0 +1,5 @@
+*.pyc
+.idea/
+*.log
+docker_volume/grafana/
+docker_volume/influxdb/
