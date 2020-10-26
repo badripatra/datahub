@@ -2,7 +2,8 @@ version: '2.1'
 
 services:
   restservices:
-    build: .
+    image: 'bpatra/public_images:restservices'
+    restart: always
     networks:
       - monitoring_network
     ports:
@@ -12,17 +13,19 @@ services:
       - ./logs:/logs:rw
 
   zookeeper:
-    image: 'docker.io/bitnami/zookeeper:3-debian-10'
-    ports:
-      - '2181:2181'
+    image: 'bpatra/public_images:zookeeper'
+    restart: always
     volumes:
       - 'zookeeper_data:/bitnami'
+    ports:
+      - '2181:2181'
     networks:
       - monitoring_network
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
   kafka:
-    image: 'docker.io/bitnami/kafka:2-debian-10'
+    image: 'bpatra/public_images:kafka'
+    restart: always
     ports:
       - '9092:9092'
     volumes:
@@ -78,7 +81,6 @@ networks:
           driver: default
           config:
               - subnet: 172.28.0.0/16
-
 
 volumes:
   zookeeper_data:

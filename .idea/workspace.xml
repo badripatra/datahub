@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24db4f0a-53ae-41d9-a035-778716317af3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker_volume/grafana_dashboards/sample_dashboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker_volume/grafana_dashboards/sample_dashboard.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/producer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_services/nfs_verifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest_services/nfs_verifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/destroy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/pcp_automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pcp_automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ppcs_automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ppcs_automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +33,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/automation_jobs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/nfsvolume/ppcs_automation" />
+      <recent name="$PROJECT_DIR$/rest_services" />
+      <recent name="$PROJECT_DIR$/automation_jobs" />
+      <recent name="$PROJECT_DIR$/kafka_consumer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/consumer_producer" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/automation_jobs" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/kafka_consumer" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.read_automation_jobs">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="nfs_proto" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="kafka-docker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +134,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Python.nfs_proto" />
       <item itemvalue="Python.rest_api" />
       <item itemvalue="Python.nfs_verifications" />
@@ -138,6 +151,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Python.read_automation_jobs" />
         <item itemvalue="Python.nfs_verifications" />
       </list>
@@ -161,10 +175,14 @@
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
     <state x="418" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603018484481" />
-    <state x="642" y="332" width="620" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602951507454">
+    <state x="642" y="332" width="671" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603702989933">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state x="642" y="332" width="620" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1056@0.0.1920.1056" timestamp="1602951507454" />
+    <state x="642" y="332" width="671" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1056@0.0.1920.1056" timestamp="1603702989933" />
+    <state x="622" y="238" width="668" height="583" key="#docker-compose.yml:_Compose_Deployment" timestamp="1603619347338">
+      <screen x="0" y="0" width="1920" height="1056" />
+    </state>
+    <state x="622" y="238" width="668" height="583" key="#docker-compose.yml:_Compose_Deployment/0.0.1920.1056@0.0.1920.1056" timestamp="1603619347338" />
     <state x="800" y="268" width="311" height="522" key="EnvironmentVariablesDialog" timestamp="1603015673236">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
@@ -213,9 +231,9 @@
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
     <state x="623" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1056@0.0.1920.1056" timestamp="1603353870977" />
-    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603083852655">
+    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603703056244">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603083852655" />
+    <state x="685" y="421" width="542" height="216" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1056@0.0.1920.1056" timestamp="1603703056244" />
   </component>
 </project>
