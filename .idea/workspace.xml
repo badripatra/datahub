@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24db4f0a-53ae-41d9-a035-778716317af3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose_kubernetes.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest_services/log_verifications.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest_services/nfs_verifications.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest_services/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest_services/rest_api.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
